@@ -43,8 +43,8 @@
 
     <!-- form section -->
     <form action="javascript:void(0)" onsubmit="handleOnSubmit(this)">
-  <div class="row">
-       <form class="row g-3">
+
+       <div class="row g-3">
         <div class="col-md-6">
           <label for="input" class="form-label">Application No:</label>
           <input name="task" type="number" class="form-control" id="input" placeholder="Number" required>
@@ -79,9 +79,7 @@
             <table class="table table-striped">
                 <tbody id="task-list"></tbody>
               </table>
-              <div class="text-start fst-italic" >
-                Total Candidate = <span id="ttlCandidate">0</span> number
-              </div>
+             
         </div>
     </div>
 
@@ -92,9 +90,9 @@
           <table class="table table-striped">
               <tbody id="select-form"></tbody>
             </table>
-            <div class="text-start fst-italic">
-              Total Selected Candidate = <span id="ttlSelectCandidate">0</span> number
-            </div>
+            <!-- <div class="text-start fst-italic">
+              Total Candidate = <span id="ttlSelectCandidate">0</span> number
+            </div> -->
       </div>
       </div>
   </div>
@@ -102,7 +100,7 @@
 
     </div>
 
-</div>
+
 
    <script src="script.js"></script> 
 </body>

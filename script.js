@@ -1,7 +1,7 @@
 let taskList = [];
 let selectList =[];
 
-
+let number = 20;
 
 const handleOnSubmit = (e) => {
     const frmData = new FormData(e);
@@ -101,6 +101,14 @@ const seltectedItem = (i) => {
   display();
   displaySlectForm();
 };
+
+const totalCandidateNumber = () => {
+  const total = taskList.reduce((acc, i) =>  acc + i.i, 0);
+
+  document.getElementById("ttlSelectCandidate").innerText = total();
+  return total;
+};
+
 
 
 
